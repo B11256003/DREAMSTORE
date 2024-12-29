@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAM唱片店</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="new-release.html">新專預告<br><span>NEW RELEASE</span></a></li>
+            <li><a href="connect-us.html">聯繫我們<br><span>CONNENT</span></a></li>
+            <li><a href="select.html">訂單查詢<br><span>SELECT</span></a></li>
+            <li><a href="購物須知.html">購物須知<br><span>SHOPPING NOTES</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- 頁面頂部，包含購物車圖標 -->
+    <header>
+        <div class="cart-icon">
+            <span  id="cart-count" style="align-self: right">0</span> 🛒 購物車
+        </div>
+    </header>
+
+    <!-- 商品展示區 -->
+    <section class="products">
+        <div class="container">
+            <h2>熱門商品</h2>
+            <div class="product-grid">
+                <div class="product-card" data-id="1" data-name="SPILL THE FEELS" data-price="600">
+                    <img src="https://lineimg.omusic.com.tw/img/album/7554856.jpg?v=20241014232909" alt="SPILL THE FEELS">
+                    <h3>SPILL THE FEELS</h3>
+                    <p>創作者:SEVENTEEN</p>
+                    <p>價格:600</p>
+                    <p>發行日:2024/10/14</p>
+                    <p><a href="https://youtu.be/5NPe8_gDSr4?si=M-JBoHuDZJOEPGoP" target="_blank"style="color: white;">在YOUTUBE上聆聽</a></p>
+                     
+                   <button class="add-to-cart">加入購物車</button>
+                </div>
+                <div class="product-card" data-id="2" data-name="CHILL KILL" data-price="550">
+                    <img src="https://upload.wikimedia.org/wikipedia/zh/c/c1/Red_Velvet_-_Chill_Kill_Album_Cover.jpeg" alt="CHILL KILL">
+                    <h3>CHILL KILL</h3>
+                    <p>創作者:Red Velvet</p>
+                    <p>價格:550</p>
+                    <p>發行日:2023/11/13</p>
+                    <p><a href="https://youtu.be/xlyrt5eAtKI?si=x7EhM8VoXu3PyINi" target="_blank"style="color: white;">在YOUTUBE上聆聽</a></p>
+                    <button class="add-to-cart">加入購物車</button>
+                </div>
+                <div class="product-card" data-id="3" data-name="Whiplash" data-price="550">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/lead-67189dbfd6d0a.png?crop=0.500xw:1.00xh;0.500xw,0&resize=1120:*" alt="Whiplash">
+                    <h3>Whiplash</h3>
+                    <p>創作者:aespa</p>
+                    <p>價格:530</p>
+                    <p>發行日:2024/10/21</p>
+                    <p><a href="https://youtu.be/jWQx2f-CErU?si=W9VNYB3hg-iDkaBH" target="_blank"style="color: white;">在YOUTUBE上聆聽</a></p>
+                    <button class="add-to-cart">加入購物車</button>
+                </div>
+                <div class="product-card" data-id="4" data-name="CRAZY" data-price="550">
+                    <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/b/bd/Le_sserafim_-_crazy_new_cover.JPG/220px-Le_sserafim_-_crazy_new_cover.JPG" alt="CRAZY">
+                    <h3>CRAZY</h3>
+                    <p>創作者:lesserafim</p>
+                    <p>價格:530</p>
+                    <p>發行日:2024/0830</p>
+                    <p><a href="https://youtu.be/n6B5gQXlB-0?si=AppzwbiMbe8N0mQh" target="_blank"style="color: white;">在YOUTUBE上聆聽</a></p>
+                    <button class="add-to-cart">加入購物車</button>
+                </div>
+          
+                <div class="product-card" data-id="5" data-name="Like A Flower" data-price="550">
+                    <img src="https://upload.wikimedia.org/wikipedia/zh/5/5f/Irene_-_Like_A_Flower_Album_Cover.jpg" alt="Like A Flower">
+                    <h3>Like A Flower</h3>
+                    <p>創作者:Irene</p>
+                    <p>價格:550</p>
+                    <p>發行日:2024/11/26</p>
+                    <p><a href="https://youtu.be/KdOF5-h4qpw?si=a6sA2qwlJCDNCUy9" target="_blank"style="color: white;">在YOUTUBE上聆聽</a></p>
+                    <button class="add-to-cart">加入購物車</button>
+                </div>     
+                <div class="product-card" data-id="6" data-name="rosie" data-price="720">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/snapinsta-app-461917390-937933684813148-67984470994786569-n-1080-6752da6eadb96.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="rosie">
+                    <h3>rosie</h3>
+                    <p>創作者:Rose</p>
+                    <p>價格:720</p>
+                    <p>發行日:2024/12/06</p>
+                    <p><a href="https://youtu.be/eA0lHNZ1KCA?si=li43IQlnHhRMxMM0" target="_blank"style="color: white;">在YOUTUBE上聆聽</a></p>
+                    <button class="add-to-cart">加入購物車</button>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- 購物車彈出視窗 -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close">&times;</span> <!-- 關閉按鈕 -->
+            <h2>您的購物車</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>商品名稱</th>
+                        <th>單價</th>
+                        <th>數量</th>
+                        <th>小計</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 購物車內容將通過 JavaScript 填充 -->
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <h3>總計: $<span id="total-price">0</span></h3>
+                <button id="checkout-button">結帳</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
